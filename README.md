@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# AI Code Commenter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The AI Code Commenter is a user-friendly web application that uses advanced artificial intelligence to automatically generate clear and detailed comments for your code snippets. Simply paste your code into the app and instantly receive easy-to-understand comments to enhance readability and maintainability.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Client:** React, Tailwind CSS, Axios
 
-## Expanding the ESLint configuration
+**AI API:** OpenAI GPT-4
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Deployment:** Netlify
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🔗 Links
+
+- [🌐 Live Demo](https://codecommenter.netlify.app/)
+
+## ⚙️ How It Works
+
+1. Paste your code snippet into the provided input area.
+2. Click on "Generate Comments".
+3. The AI quickly analyzes and generates comments explaining your code.
+4. Copy and use your newly commented code instantly.
+
+## 🚀 Features
+
+- Fast and reliable AI-generated code comments
+- User-friendly, minimalist interface
+- Instant copying for easy integration into your projects
+- Responsive and accessible design
+
+## 🛠️ Installation and Setup
+
+To run the project locally:
+
+1. Clone this repository:
+
+```bash
+git clone <repository-url>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Navigate into the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd ai-code-commenter
 ```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+The project will be accessible at `http://localhost:5173`.
+
+## 📌 Author
+
+- [Alexsander (GitHub)](https://github.com/alesk1v9)
+
